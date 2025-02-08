@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Checkup Bot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header, Image, and Real-time User Traffic Section -->
+        <section class="header-image-section">
+            <header>
+                <h1>Welcome to Your Mental Health Checkup Bot 🤖</h1>
+            </header>
+            <div class="image-container">
+                <img src="MentalHealth.webp" alt="Mental Health" class="main-image">
+            </div>
+            <div class="user-traffic">
+                <h2>Current Active Users: <span id="active-users">0</span></h2>
+            </div>
+        </section>
+
+        <!-- Introduction Section -->
+        <section class="introduction">
+            <p>Our Mental Health Checkup Bot is here to help you with your mental well-being. You can chat with the bot to share how you're feeling and receive helpful tips and resources.</p>
+        </section>
+
+        <!-- Bot Interaction and Chat Box Section -->
+        <section class="bot-interaction-chat">
+            <div id="chat-box" class="chat-box"></div>
+            <div class="input-area">
+                <input type="text" id="user-input" placeholder="Type your message here..." list="suggestions">
+                <button id="send-button">Send</button>
+                <button id="mic-button"><img src="mic.jpeg" alt="Mic" class="mic-icon"></button>
+                <datalist id="suggestions">
+                    <option value="How are you?">
+                    <option value="I am feeling sad.">
+                    <option value="Can you give me some tips?">
+                    <option value="What should I do if I feel anxious?">
+                    <option value="Tell me a joke.">
+                </datalist>
+            </div>
+        </section>
+
+        <!-- Recent Conversations Section -->
+        <section class="recent-conversations">
+            <h2>Recent Conversations 🗨️</h2>
+            <ul id="conversation-list">
+                <!-- Recent conversations will be dynamically added here -->
+            </ul>
+        </section>
+
+        <!-- Quick Tips Section -->
+        <section class="quick-tips">
+            <h2>Quick Tips 💡</h2>
+            <ul>
+                <li>Take a few minutes to meditate and clear your mind. 🧘‍♂️</li>
+                <li>Write down your thoughts and feelings in a journal. 📓</li>
+                <li>Take a short walk to get some fresh air. 🚶‍♀️</li>
+                <li>Listen to your favorite music to lift your mood. 🎶</li>
+                <li>Reach out to a friend or family member for support. 📞</li>
+            </ul>
+        </section>
+
+        <!-- Health Tips Section -->
+        <section class="health-tips">
+            <h2>Health Tips 💡</h2>
+            <ul>
+                <li>Take deep breaths and practice mindfulness. 🧘‍♂️</li>
+                <li>Maintain a regular sleep schedule. 🛌</li>
+                <li>Stay hydrated and eat a balanced diet. 🥗</li>
+                <li>Exercise regularly. 🏃‍♀️</li>
+                <li>Connect with loved ones and build a support system. ❤️</li>
+            </ul>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq">
+            <h2>Frequently Asked Questions ❓</h2>
+            <ul>
+                <li><strong>How can this bot help me?</strong> The bot can provide you with mental health tips and resources based on your responses.</li>
+                <li><strong>Is my conversation private?</strong> Yes, your conversation is stored locally on your device and is not shared with anyone.</li>
+                <li><strong>Can I talk to a real person?</strong> If you need to talk to a real person, we recommend reaching out to a mental health professional or a trusted friend or family member.</li>
+            </ul>
+        </section>
+
+        <!-- About Section -->
+        <section class="about">
+            <h2>About Us 🧠</h2>
+            <p>We are dedicated to providing support and resources for mental health and well-being. Our team consists of mental health professionals and technology experts who have come together to create this helpful bot. Our mission is to make mental health support accessible to everyone.</p>
+        </section>
+
+        <!-- Feedback Section -->
+        <section class="feedback">
+            <h2>Feedback 📝</h2>
+            <form id="feedback-form">
+                <label for="feedback-text">Your Feedback:</label>
+                <textarea id="feedback-text" rows="4" placeholder="Write your feedback here..."></textarea>
+                <button type="submit" id="submit-feedback">Submit</button>
+            </form>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact">
+            <h2>Contact Us 📧</h2>
+            <p>If you have any questions or feedback, please contact us at <a href="mailto:support@mentalhealthbot.com">support@mentalhealthbot.com</a>.</p>
+        </section>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>&copy; 2025 Mental Health Checkup Bot</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
